@@ -5,6 +5,7 @@ body {
   font-family: 'Akronim';
 }
 #body__title {
+  display: flex;
   font-family:monospace;
   font-size: 80px;
 }
