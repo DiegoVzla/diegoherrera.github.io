@@ -2800,6 +2800,23 @@ input, select, textarea {
 
 /* Icons */
 
+
+li img {
+    width: 150px !important;
+    height: 150px !important;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+li {
+    flex: 1;
+    max-width: 33.33%;
+}
+
+
 ul {
 	list-style: none;
 }
