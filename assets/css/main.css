@@ -2747,7 +2747,7 @@ input, select, textarea {
 				width: 100%;
 			}
 
-		@media screen and (max-width: 480px) {
+		@media screen and (max-width: 350px) {
 
 			ul.actions:not(.fixed) {
 				-moz-flex-direction: column;
@@ -2814,14 +2814,21 @@ input, select, textarea {
 	  width: auto !important;
 	}
   }
+
+  @media only screen and (max-width: 0px) and (min-width: 400px)  {
+	ul .button {
+		display: inline-block !important;
+		width: calc(50% - 0.5em) !important;
+		text-align: center !important;
+		margin: 0 0.5em !important;
+		padding: 0.5em 1em !important;
+	}
+}
+
   
 
   /* make the images in skills responsive */
 
-  li img {
-    width: 100% !important;
-    height: auto !important;
-}
 
 @media only screen and (max-width: 768px) {
 	#main .grid ul {
@@ -2835,11 +2842,17 @@ input, select, textarea {
 	  display: inline-block !important;
 	  text-align: center !important;
 	}
+	
+	li img {
+		width: 130% !important;
+		height: auto !important;
+	}
   }
+
   
   @media only screen and (min-width: 769px) {
 	#main .grid ul li {
-	  width: calc(33.33% - 1em) !important;
+	  width: calc(30.33% - 1em) !important;
 	  margin: 0.5em !important;
 	  display: inline-block !important;
 	  text-align: center !important;
