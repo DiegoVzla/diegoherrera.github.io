@@ -2800,24 +2800,27 @@ input, select, textarea {
 
 /* Icons */
 
-@media only screen and (max-width: 768px) {
-  ul .button {
-    display: block !important;
-    text-align: center !important;
-    white-space: nowrap !important;
-    overflow: hidden !important;
-    text-overflow: ellipsis !important;
-    padding: 0.5em 1em !important;
-    margin: 0 auto !important;
-    width: fit-content !important;
-  }
-}
+/* make buttons responsive */
 
+@media only screen and (max-width: 768px) {
+	ul .button {
+	  display: inline-block !important;
+	  text-align: center !important;
+	  white-space: nowrap !important;
+	  overflow: hidden !important;
+	  text-overflow: ellipsis !important;
+	  padding: 0.5em 1em !important;
+	  margin: 0 auto !important;
+	  width: auto !important;
+	}
+  }
   
 
-li img {
-    width: 150px !important;
-    height: 150px !important;
+  /* make the images in skills responsive */
+
+  li img {
+    width: 100% !important;
+    height: auto !important;
 }
 
 @media only screen and (max-width: 768px) {
@@ -2827,13 +2830,22 @@ li img {
 	}
   
 	#main .grid ul li {
-	  width: calc(33.33% - 1em) !important;
+	  width: calc(50% - 1em) !important;
 	  margin: 0.5em !important;
 	  display: inline-block !important;
 	  text-align: center !important;
 	}
   }
   
+  @media only screen and (min-width: 769px) {
+	#main .grid ul li {
+	  width: calc(33.33% - 1em) !important;
+	  margin: 0.5em !important;
+	  display: inline-block !important;
+	  text-align: center !important;
+	}
+  }
+
   
 
 ul {
